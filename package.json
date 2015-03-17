@@ -7,7 +7,8 @@
     "test": "npm run jshint && npm run mocha",
     "start": "node lib/",
     "jshint": "jshint lib/. test/. --config",
-    "mocha": "mocha --compilers js:babel/register test/"
+    "mocha": "mocha --compilers js:babel/register test/",
+    "build": "steal-tools build --config 'package.json!npm' --main public/app --bundle-steal"
   },
   "author": "Me",
   "license": "MIT",
@@ -19,6 +20,7 @@
     "jquery": "^2.1.3",
     "jshint": "^2.6.3",
     "request": "^2.53.0",
-    "steal": "^0.7.1"
+    "steal": "^0.7.1",
+    "steal-tools": "^0.7.1"
   }
 }
